@@ -2,12 +2,8 @@ services:
   - type: web
     name: zofio-backend
     env: node
-    region: singapore
-    plan: free
-    rootDir: src/zofio_backend
-    buildCommand: npm install
-    startCommand: node server.js
-    healthCheckPath: /health
+    buildCommand: cd src/zofio_backend && npm install
+    startCommand: cd src/zofio_backend && node server.js
     envVars:
       - key: NODE_ENV
         value: production
