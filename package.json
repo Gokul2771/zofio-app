@@ -1,0 +1,8 @@
+{
+  "name": "zofio-app",
+  "private": true,
+  "workspaces": [
+    "src/zofio_backend",
+    "src/zofio_login"
+  ]
+}
